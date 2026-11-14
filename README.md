@@ -43,7 +43,7 @@ There are 77 unique Khmer characters and 26 unique English characters in the dat
 The model is based on an Attention-Based Bidirectional GRU architecture designed for sequence-to-sequence transliteration. It follows an encoder–decoder structure, where the encoder processes the input Latin script (English) sequence, and the decoder generates the corresponding Khmer script sequence character by character.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/netra-ai-lab/Romanized-Khmer-to-Khmer-Transliteration/main/assets/architecture.png" alt="AkaraAlpha turning brodae into Khmer: a bidirectional GRU encoder reading upwards and a GRU decoder with additive attention reading downwards">
+  <img src="https://raw.githubusercontent.com/netra-ai-lab/Romanized-Khmer-to-Khmer-Transliteration/main/assets/akaraalpha_architecture.png" alt="AkaraAlpha turning brodae into Khmer: a bidirectional GRU encoder reading upwards and a GRU decoder with additive attention reading downwards">
 </p>
 
 <p><em><strong>Figure 2 | The proposed Attention-based Bidirectional Gated Recurrent Unit architecture, turning brodae into ប្រដែ.</strong> The encoder reads upwards: each letter becomes a 32-dimensional embedding, a bidirectional GRU reads the letters in both directions, and a projection brings each state to 64 dimensions, the keys and values for attention. The decoder reads downwards. At step 4, with ប ្ រ written, its GRU output is the query for additive attention, and a softmax layer over 81 ids gives ដ with probability 0.997. The chosen character joins the input and the loop repeats until the end marker.</em></p>
