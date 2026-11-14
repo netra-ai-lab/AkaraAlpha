@@ -49,8 +49,8 @@ train = [
 netra-transliterate = "khmer_transliterator.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/darayutnhem009/khmer-english-transliteration"
-Repository = "https://github.com/darayutnhem009/khmer-english-transliteration"
+Homepage = "https://github.com/netra-ai-lab/Romanized-Khmer-to-Khmer-Transliteration"
+Repository = "https://github.com/netra-ai-lab/Romanized-Khmer-to-Khmer-Transliteration"
 
 [tool.setuptools.packages.find]
 include = ["khmer_transliterator*"]
