@@ -58,7 +58,7 @@ Each input token is first mapped into a continuous vector space through an embed
 
 The decoder consists of a GRU layer of 64 units that processes the output sequence one Khmer character at a time, starting from a zero state. At each decoding step, it receives the previously predicted character. Additive attention then scores every projected encoder state against the decoder's GRU output to build a context vector, which helps the model focus on the most relevant parts of the input sequence. This context vector is concatenated with the decoder's GRU output and passed through a dense softmax layer over 81 ids (77 Khmer characters, start, end, unknown and padding) to produce the final character prediction.
 
-| | |
+| Part | Setting |
 | :--- | :--- |
 | Embedding dimension | 32 |
 | Encoder | Bidirectional GRU, 64 units each way, then a projection to 64 |
